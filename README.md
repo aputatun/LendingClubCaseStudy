@@ -110,7 +110,7 @@ Below observations were made as part of this analysis.
 ## Bivariate analysis
 
 This section involves the analysis of one or more columns against the values of other columns to find whether there is a pattern of dependency.
-This analysis is subdivided into two parts. Numerical columns vs numerical columns and categorical columns vs numerical columns.
+This analysis is subdivided into two parts. Numerical columns vs numerical columns and categorical columns vs numerical columns and categorical columns vs categorical columns.
 
 Below observations were made as part of this analysis.
 
@@ -132,6 +132,11 @@ Below observations were made as part of this analysis.
 
           6. **Annual Income vs. Debt-to-Income Ratio**:
             - Negative correlation: As annual income increases, the debt-to-income ratio tends to decrease.
+	  7. **Margin vs. Debt-to-Income Ratio**:
+            - As the margin increases, the debt-to-income ratios vary more widely.
+
+          8. **Margin vs. Int_Rate Ratio**:
+             - The margin doesn't seem to affect the interest rate..
 
      ## Categorical vs Numerical
 	    1. **Term vs Loan Amount**:
@@ -171,6 +176,80 @@ Below observations were made as part of this analysis.
     
               Median of the loan amounts is high for customers with mortgages as compared to renters and others, suggesting a correlation
               between homeownership and the loan amount.
+            10. **Margin vs. Loan Status**:
+
+              People who fully repaid their loans had a bigger gap between their income and loan amount than those who didn't repay.
+    ## Categorical vs Categorical
+        1. **Comparison between Loan Status and Term**:
+
+            Risk Levels (Charged Off Rates):
+    
+            -  Less Risky: 36 months (11.11%)
+            -  More Risky: 60 months (25.05%)
+
+            Distribution of Loan Terms:
+    
+            -  More Common: 36-month loans
+            -  Less Common: 60-month loans
+
+        2. **Comparison between Loan Status and Loan Amount**:
+
+           Risk Levels (Charged Off Rates):
+
+           -  Less Risky: 5000-10000 (12.83%), 0-5000 (13.87%), 10000-15000 (13.73%)
+           -  More Risky: 15000-20000 (17.27%), 20000-25000 (19.11%), 25000-30000 (20.46%)
+
+           Distribution of Loan Amounts:
+
+           -  More Common: Loans in the 5000-10000 and 0-5000 ranges
+           -  Less Common: Loans in the 25000-30000 and 20000-25000 ranges, indicating fewer larger loans.
+
+        3. **Comparison between Loan Status and Interest Rate**:
+
+           Risk Levels (Charged Off Rates):
+
+           -  Less Risky: 4-6% (4.09%), 6-8% (5.6%), 8-10% (9.61%)
+           -  More Risky: 16-18% (26.14%), 18-20% (30.34%), 20-22% (36.92%), 22-24% (46.08%)
+
+           Distribution of Interest Rates:
+
+           -  More Common: Loans with 10-12% and 6-8% interest rates
+           -  Less Common: Loans with 22-24% and 20-22% interest rates, indicating fewer high-risk, high-interest loans.
+
+        4. **Comparison between Loan Status and Grade**:
+
+          Risk Levels (Charged Off Rates):
+
+          -  Less Risky: Grade A (6.01%), B (12.15%), and C (17.13%)
+          -  More Risky: Grade D (21.87%), E (26.89%), F (31.8%), and G (34.26%)
+
+          Distribution of Loan Grades:
+
+          -  More Common: Grades B and A
+          -  Less Common: Grades F and G, indicating fewer high-risk loans.
+
+        5. **Comparison between Loan Status and Home Ownership**:
+
+          Risk Levels (Charged Off Rates):
+
+          -  More Risky: OTHER (18.37%), RENT (15.18%), OWN (14.67%)
+          -  Less Risky: MORTGAGE (13.31%), NONE (0.0%)
+
+          Distribution of Home Ownership:
+
+          -  High Common: RENT and MORTGAGE are most common.
+
+        6. **Comparison between Loan Status and Purpose**:
+
+          Risk:
+
+          -  High Risk: Small business, renewable energy, educational loans.
+          -  Low Risk: Wedding, car, credit card, major purchase loans.
+
+          Demand:
+
+          -  High Demand: Debt consolidation, credit card loans.
+          -  Low Demand: Renewable energy, educational loans.
 
 ## Multivariate Analysis
 
